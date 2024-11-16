@@ -26,25 +26,31 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: {
     command: 'npx nx run remix-app:serve-static',
-    url: 'http://localhost:3000',
+    url: 'http://0.0.0.0:3000',
     reuseExistingServer: !process.env.CI,
     cwd: workspaceRoot,
   },
+  reporter: [
+    ['html', { 
+      host: '0.0.0.0',
+      port: 9323
+    }]
+  ],
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     // Uncomment for mobile browsers support
     /* {

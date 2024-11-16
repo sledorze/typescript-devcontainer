@@ -12,7 +12,7 @@
 	// "forwardPorts": [5173],s
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm i",
+	"postCreateCommand": "npm i && npx playwright install-deps && npx playwright install",
 
 	// Configure tool-specific properties.
 	"customizations": {
