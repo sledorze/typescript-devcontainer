@@ -1,9 +1,9 @@
-import NxWelcome from "../nx-welcome";
+import NxWelcome from '../nx-welcome';
 
 export default function Index() {
   return (
     <div>
-      <NxWelcome title={"remix-app"} />
+      <NxWelcome title={'remix-app'} />
     </div>
   );
 }

@@ -1,10 +1,4 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from '@remix-run/react';
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 import type { MetaFunction, LinksFunction } from '@remix-run/node';
 
 export const meta: MetaFunction = () => [
