@@ -20,7 +20,8 @@
 			"extensions": [
 				"esbenp.prettier-vscode",
 				"nrwl.angular-console",
-				"ms-playwright.playwright"
+				"ms-playwright.playwright",
+				"biomejs.biome"
 			]
 		}
 	},
