@@ -1,0 +1,37 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "formatter": {
+    "enabled": true,
+    "lineWidth": 120,
+    "indentStyle": "space",
+    "formatWithErrors": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "style": {
+        "all": false
+      },
+      "correctness": {
+        "all": true
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": false
+  },
+  "files": {
+    "include": [
+      "test/**/*.js",
+      "test/**/*.jsx",
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "app/**/*.jsx",
+      "app/**/*.js",
+      "*.ts",
+      "*.tsx"
+    ],
+    "ignore": ["**/*.min.js", "node_modules"]
+  }
+}
