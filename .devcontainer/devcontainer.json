@@ -14,7 +14,7 @@
   // "forwardPorts": [5173],s
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "npx -y playwright@1.48.2 install --with-deps",
+  //"postCreateCommand": "npx -y playwright@1.48.2 install --with-deps",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -23,7 +23,12 @@
         "nrwl.angular-console",
         "ms-playwright.playwright",
         "biomejs.biome",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "ryanluker.vscode-coverage-gutters",
+        "github.vscode-github-actions",
+        "george-alisson.html-preview-vscode",
+        "SonarSource.sonarlint-vscode",
+        "redhat.vscode-yaml"
       ]
     }
   }

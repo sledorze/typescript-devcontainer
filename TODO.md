@@ -19,15 +19,28 @@ Can be
 - bun
 - nodejs 22 + ?
 
+# Security
+
+
+- GitGuardian
+- Not Gitleaks
+- Trivy
+
+- ryanluker.vscode-coverage-gutters
+
+# Logs
+
+- ChangeSets
+
 # Formating
 
-- dprint
 - biomejs
+- Not dprint
 
 # Lint
 
-- biomejs (we're loosing type capabilities - evaluate what is missing) <- to test first
-- Eslint
+- biomejs
+- Not Eslint..
 
 # Inference / Typechecking
 
