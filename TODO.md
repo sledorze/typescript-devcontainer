@@ -1,11 +1,17 @@
 # TODO
 
+TODO:Checker les Tests...
+PLAYWRIGHT dans le Docker (DockerBuild + sans npm??? <- à creuser)
+
+
+
 Nothing compares to instant feedback and fast DX
 Otherwise it breaks the flow.. the fun.. the profits..
 
 ## Speed focus
 
 # Test without building (accross projects)
+
 
 Can be 
 - jest with swc

@@ -3,7 +3,9 @@
 {
   "name": "Node.js & TypeScript",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
@@ -12,7 +14,7 @@
   // "forwardPorts": [5173],s
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "npm i && npx playwright install-deps && npx playwright install",
+  "postCreateCommand": "npx -y playwright@1.48.2 install --with-deps",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -20,7 +22,8 @@
       "extensions": [
         "nrwl.angular-console",
         "ms-playwright.playwright",
-        "biomejs.biome"
+        "biomejs.biome",
+        "ms-azuretools.vscode-docker"
       ]
     }
   }
