@@ -15,6 +15,7 @@
 
   // Use 'postCreateCommand' to run commands after the container is created.
   //"postCreateCommand": "npx -y playwright@1.48.2 install --with-deps",
+  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 
   // Configure tool-specific properties.
   "customizations": {
