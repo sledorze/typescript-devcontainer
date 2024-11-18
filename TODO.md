@@ -56,8 +56,9 @@ Otherwise it breaks the flow.. the fun.. the motivation.. the profits..
 
 # Inference / Typechecking
 
-- TODO: Accross Projects without compiling
+- TODO: Inference accross Projects without compiling (point to src not dist)
 
-# Compiling 
+# Architecture 
 
-- TODO: Incremental(???)
+- TODO: Documentation (ADR tools ? vulnerabilities :/ )
+- TODO: DDD enforcement (via config)
