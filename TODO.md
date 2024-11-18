@@ -4,35 +4,61 @@ TODO:Checker les Tests...
 PLAYWRIGHT dans le Docker (DockerBuild + sans npm??? <- à creuser)
 
 
+## Speed focus
 
 Nothing compares to instant feedback and fast DX
-Otherwise it breaks the flow.. the fun.. the profits..
+Otherwise it breaks the flow.. the fun.. the motivation.. the profits..
 
-## Speed focus
+# Monorepo
+
+- Nx
+
+# Terminal
+
+- Zsh config (Oh my...)
 
 # Test without building (accross projects)
 
+- ok vitest
+- ok ryanluker.vscode-coverage-gutters (can see coverage inline in code)
 
-Can be 
-- jest with swc
-- vitest
-- bun
-- nodejs 22 + ?
+# Security
+
+- ok Gitleaks
+- ??? GitGuardian
+- ??? Trivy
+
+# Logs
+
+- TODO: ChangeSets
 
 # Formating
 
-- dprint
-- biomejs
+- ok biomejs
+- Not dprint
 
 # Lint
 
-- biomejs (we're loosing type capabilities - evaluate what is missing) <- to test first
-- Eslint
+- ok biomejs
+- ok spellcheck
+- ok sonarlint
+- Not Eslint..
+
+# IDE
+
+- ok Code Snapshot
+- display Html
+- display Markdown
+
+# e2e Tests
+
+- ok Playwright
 
 # Inference / Typechecking
 
-- Accross Projects without compiling
+- TODO: Inference accross Projects without compiling (point to src not dist)
 
-# Compiling 
+# Architecture 
 
-- Incremental
+- TODO: Documentation (ADR tools ? vulnerabilities :/ )
+- TODO: DDD enforcement (via config)

@@ -20,8 +20,9 @@ export default defineConfig({
     include: ['./tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
     coverage: {
+      provider: 'istanbul',
+      reporter: ['text', 'json', 'lcov', 'html', 'html-spa'],
       reportsDirectory: '../../coverage/apps/remix-app',
-      provider: 'v8',
     },
   },
 });
