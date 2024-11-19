@@ -1,11 +1,12 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
-import type { MetaFunction, LinksFunction } from '@remix-run/node';
+import type { LinksFunction, MetaFunction } from '@remix-run/node'
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import React from 'react'
 
 export const meta: MetaFunction = () => [
   {
     title: 'New Remix App',
   },
-];
+]
 
 export const links: LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -18,9 +19,9 @@ export const links: LinksFunction = () => [
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
   },
-];
+]
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <head>
@@ -35,9 +36,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet />
 }

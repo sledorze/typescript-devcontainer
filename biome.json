@@ -29,19 +29,7 @@
     "enabled": false
   },
   "files": {
-    "include": [
-      "*.ts",
-      "*.tsx",
-      "*.js",
-      "*.jsx"
-    ],
-    "ignore": [
-      "**/*.min.js",
-      "dist",
-      "coverage",
-      "playwright-report",
-      "node_modules",
-      ".*"
-    ]
+    "include": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+    "ignore": ["**/*.min.js", "dist", "build", "coverage", "playwright-report", "node_modules", ".*"]
   }
 }
