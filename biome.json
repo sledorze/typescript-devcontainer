@@ -2,7 +2,9 @@
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "javascript": {
     "formatter": {
-      "quoteStyle": "single"
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "asNeeded"
     }
   },
   "formatter": {
@@ -27,16 +29,7 @@
     "enabled": false
   },
   "files": {
-    "include": [
-      "test/**/*.js",
-      "test/**/*.jsx",
-      "src/**/*.js",
-      "src/**/*.jsx",
-      "app/**/*.jsx",
-      "app/**/*.js",
-      "*.ts",
-      "*.tsx"
-    ],
-    "ignore": ["**/*.min.js", "node_modules"]
+    "include": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+    "ignore": ["**/*.min.js", "dist", "build", "coverage", "playwright-report", "node_modules", ".*"]
   }
 }

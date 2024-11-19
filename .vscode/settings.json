@@ -27,5 +27,19 @@
   },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "always",
+    "source.fixAll.ts": "always",
+    "source.addMissingImports.ts": "always",
+    "source.organizeImports.biome": "always",
+    "source.removeUnused.ts": "never",
+    "source.removeUnusedImports": "always",
+    "source.sortImports": "always",
+    "source.organizeImports": "always",
+    "source.organizeLinkDefinitions": "explicit",
+    "source.fixAll.eslint": "always"
+  },
 }
