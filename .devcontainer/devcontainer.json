@@ -31,7 +31,8 @@
         "SonarSource.sonarlint-vscode",
         "redhat.vscode-yaml",
         "timonwong.shellcheck",
-        "robertz.code-snapshot"
+        "pflannery.vscode-versionlens",
+        "oderwat.indent-rainbow"
       ]
     }
   },

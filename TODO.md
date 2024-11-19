@@ -3,7 +3,6 @@
 TODO:Checker les Tests...
 PLAYWRIGHT dans le Docker (DockerBuild + sans npm??? <- à creuser)
 
-
 ## Speed focus
 
 Nothing compares to instant feedback and fast DX
