@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "biomejs.biome",
+    "ms-playwright.playwright"
+  ]
+}

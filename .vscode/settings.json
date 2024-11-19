@@ -1,0 +1,45 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "typescript.format.enable": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "coverage-gutters.coverageFileNames": [
+    "lcov.info",
+    "cov.xml",
+    "coverage.xml",
+    "jacoco.xml",
+    "coverage.lcov"
+  ],
+  "coverage-gutters.coverageBaseDir": "coverage/*/*",
+  "coverage-gutters.showLineCoverage": true,
+  "coverage-gutters.showRulerCoverage": true,
+  "coverage-gutters.ignoredPathGlobs": "**/{node_modules,venv,.venv,vendor,.nx}/**",
+  "coverage-gutters.showGutterCoverage": true,
+  "coverage-gutters.customizable.status-bar-toggler-watchCoverageAndVisibleEditors-enabled": true,
+  "coverage-gutters.customizable.context-menu": true,
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "always",
+    "source.fixAll.ts": "always",
+    "source.addMissingImports.ts": "always",
+    "source.organizeImports.biome": "always",
+    "source.removeUnused.ts": "never",
+    "source.removeUnusedImports": "always",
+    "source.sortImports": "always",
+    "source.organizeImports": "always",
+    "source.organizeLinkDefinitions": "explicit",
+    "source.fixAll.eslint": "always"
+  },
+}
