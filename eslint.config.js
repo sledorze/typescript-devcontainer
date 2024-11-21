@@ -1,5 +1,7 @@
+// biome-ignore lint/nursery/noCommonJs: <explanation>
 const nx = require('@nx/eslint-plugin')
 
+// biome-ignore lint/nursery/noCommonJs: <explanation>
 module.exports = [
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],

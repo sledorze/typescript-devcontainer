@@ -36,13 +36,17 @@ function handleBotRequest(
   responseStatusCode: number,
   responseHeaders: Headers,
   remixContext: EntryContext,
-) {
+): Promise<Response> {
   return new Promise((resolve, reject) => {
     let shellRendered = false
     const { pipe, abort } = renderToPipeableStream(
-      <RemixServer context={remixContext} url={request.url} abortDelay={ABORT_DELAY} />,
+      <RemixServer
+        context={remixContext}
+        url={request.url}
+        abortDelay={ABORT_DELAY}
+      />,
       {
-        onAllReady() {
+        onAllReady(): void {
           shellRendered = true
           const body = new PassThrough()
           const stream = createReadableStreamFromReadable(body)
@@ -58,12 +62,12 @@ function handleBotRequest(
 
           pipe(body)
         },
-        onShellError(error: unknown) {
+        onShellError(error: unknown): void {
           if (error instanceof Error) {
             reject(error)
           }
         },
-        onError(error: unknown) {
+        onError(error: unknown): void {
           responseStatusCode = 500
           // Log streaming rendering errors from inside the shell.  Don't log
           // errors encountered during initial shell rendering since they'll
@@ -85,13 +89,17 @@ function handleBrowserRequest(
   responseStatusCode: number,
   responseHeaders: Headers,
   remixContext: EntryContext,
-) {
+): Promise<Response> {
   return new Promise((resolve, reject) => {
     let shellRendered = false
     const { pipe, abort } = renderToPipeableStream(
-      <RemixServer context={remixContext} url={request.url} abortDelay={ABORT_DELAY} />,
+      <RemixServer
+        context={remixContext}
+        url={request.url}
+        abortDelay={ABORT_DELAY}
+      />,
       {
-        onShellReady() {
+        onShellReady(): void {
           shellRendered = true
           const body = new PassThrough()
           const stream = createReadableStreamFromReadable(body)
@@ -108,12 +116,12 @@ function handleBrowserRequest(
 
           pipe(body)
         },
-        onShellError(error: unknown) {
+        onShellError(error: unknown): void {
           if (error instanceof Error) {
             reject(error)
           }
         },
-        onError(error: unknown) {
+        onError(error: unknown): void {
           responseStatusCode = 500
           // Log streaming rendering errors from inside the shell.  Don't log
           // errors encountered during initial shell rendering since they'll

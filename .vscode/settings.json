@@ -24,7 +24,7 @@
   "coverage-gutters.customizable.context-menu": true,
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
-  },
+  },  
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
@@ -34,7 +34,7 @@
     "source.fixAll.biome": "always",
     "source.fixAll.ts": "always",
     "source.addMissingImports.ts": "always",
-    "source.organizeImports.biome": "always",
+    "source.organizeImports.biome": "explicit",
     "source.removeUnused.ts": "never",
     "source.removeUnusedImports": "always",
     "source.sortImports": "always",
