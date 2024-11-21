@@ -4,6 +4,10 @@
     "formatter": {
       "quoteStyle": "single",
       "semicolons": "asNeeded",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "bracketSpacing": true,
+      "attributePosition": "multiline",
       "arrowParentheses": "asNeeded"
     }
   },
@@ -13,12 +17,36 @@
     "indentStyle": "space",
     "formatWithErrors": true
   },
+  "json": {
+    "formatter": {
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "trailingCommas": "none"
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
       "all": true,
       "style": {
         "all": false
+      },
+      "performance": {
+        "all": true
+      },
+      "security": {
+        "all": true
+      },
+      "complexity": {
+        "all": true
+      },
+      "suspicious": {
+        "all": true
+      },
+      "nursery": {
+        "all": true,
+        "useComponentExportOnlyModules": "off",
+        "useExplicitType": "off"
       },
       "correctness": {
         "all": true
@@ -29,7 +57,17 @@
     "enabled": false
   },
   "files": {
-    "include": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-    "ignore": ["**/*.min.js", "dist", "build", "coverage", "playwright-report", "node_modules", ".*"]
+    "include": ["*.ts", "*.tsx", "*.js", "*.jsx", "*.json"],
+    "ignore": [
+      "**/*.min.js",
+      "dist",
+      "build",
+      "coverage",
+      "playwright-report",
+      "node_modules",
+      ".nx",
+      ".github",
+      "package-lock.json"
+    ]
   }
 }

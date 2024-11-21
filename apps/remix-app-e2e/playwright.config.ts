@@ -1,9 +1,10 @@
-import { defineConfig, devices } from '@playwright/test'
 import { nxE2EPreset } from '@nx/playwright/preset'
+import { defineConfig, devices } from '@playwright/test'
 
 import { workspaceRoot } from '@nx/devkit'
 
 // For CI, you may want to set BASE_URL to the deployed application.
+// biome-ignore lint/nursery/noProcessEnv: <explanation>
 const baseURL = process.env.BASE_URL || 'http://localhost:3000'
 
 /**
@@ -27,6 +28,7 @@ export default defineConfig({
   webServer: {
     command: 'npx nx run remix-app:serve-static',
     url: 'http://0.0.0.0:3000',
+    // biome-ignore lint/nursery/noProcessEnv: <explanation>
     reuseExistingServer: !process.env.CI,
     cwd: workspaceRoot,
   },

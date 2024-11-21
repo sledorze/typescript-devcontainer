@@ -8,13 +8,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "coverage-gutters.coverageFileNames": [
-    "lcov.info",
-    "cov.xml",
-    "coverage.xml",
-    "jacoco.xml",
-    "coverage.lcov"
-  ],
+  "coverage-gutters.coverageFileNames": ["lcov.info", "cov.xml", "coverage.xml", "jacoco.xml", "coverage.lcov"],
   "coverage-gutters.coverageBaseDir": "coverage/*/*",
   "coverage-gutters.showLineCoverage": true,
   "coverage-gutters.showRulerCoverage": true,
@@ -34,7 +28,7 @@
     "source.fixAll.biome": "always",
     "source.fixAll.ts": "always",
     "source.addMissingImports.ts": "always",
-    "source.organizeImports.biome": "always",
+    "source.organizeImports.biome": "explicit",
     "source.removeUnused.ts": "never",
     "source.removeUnusedImports": "always",
     "source.sortImports": "always",
@@ -42,4 +36,7 @@
     "source.organizeLinkDefinitions": "explicit",
     "source.fixAll.eslint": "always"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
 }

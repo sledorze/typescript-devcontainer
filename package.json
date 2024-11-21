@@ -7,15 +7,13 @@
     "prepare": "husky",
     "syncpack:fix-mismatches": "npm exec syncpack fix-mismatches",
     "syncpack:update-packages": "npm exec syncpack update",
-    "test:coverage": "nx run-many --target=test --all --coverage"
+    "test:coverage": "nx run-many --target=test --all --coverage",
+    "format:fix": "biome check --write"
   },
   "private": true,
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "npm exec biome check",
-    "*": "gitleaks protect --staged --verbose",
-    "package.json": [
-      "npm exec syncpack list-mismatches"
-    ]
+    "*": ["gitleaks protect --staged --verbose", "biome check --write"],
+    "package.json": ["syncpack list-mismatches"]
   },
   "dependencies": {
     "@nx/remix": "20.1.1",
