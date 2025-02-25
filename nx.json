@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
@@ -12,7 +15,7 @@
     ],
     "sharedGlobals": []
   },
-  "nxCloudId": "6736863bc6bb65513775bde0",
+  "nxCloudId": "67be322711cfa342a3d1bcac",
   "plugins": [
     {
       "plugin": "@nx/remix/plugin",
@@ -50,7 +53,9 @@
   ],
   "targetDefaults": {
     "e2e-ci--**/*": {
-      "dependsOn": ["^build"]
+      "dependsOn": [
+        "^build"
+      ]
     }
   }
 }
